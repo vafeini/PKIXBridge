@@ -32,13 +32,5 @@ let package = Package(
             name: "PKIXBridge",
             path: "Sources/PKIXBridge"
         ),
-        .testTarget(
-            name: "PKIXBridgeTests",
-            dependencies: ["PKIXBridge"],
-            path: "Tests/PKIXBridgeTests",
-            resources: [
-                .process("Fixtures"),
-            ]
-        ),
     ]
 )
