@@ -22,7 +22,6 @@ let package = Package(
     products: [
         .library(
             name: "PKIXBridge",
-            type: .static,
             targets: ["PKIXBridge"]
         ),
     ],
@@ -30,7 +29,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PKIXBridge",
-            path: "./distribution/archive/PKIXBridge.xcframework.zip"
+            path: "./distribution/PKIXBridge.xcframework"
         ),
         .testTarget(
            name: "PKIXBridgeTests",
