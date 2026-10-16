@@ -28,9 +28,9 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(
+        .binaryTarget(
             name: "PKIXBridge",
-            path: "Sources/PKIXBridge"
-        ),
-    ]
+            path: "./distribution/PKIXBridge.xcframework"
+        )
+      ]
 )
