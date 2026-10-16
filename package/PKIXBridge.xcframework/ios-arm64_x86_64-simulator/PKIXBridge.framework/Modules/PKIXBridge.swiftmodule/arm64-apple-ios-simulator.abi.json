@@ -1,0 +1,2216 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "PKIXBridge",
+    "printedName": "PKIXBridge",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKIXCertificateInspector",
+        "printedName": "PKIXCertificateInspector",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXCertificateInspector",
+                "printedName": "PKIXBridge.PKIXCertificateInspector",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)init",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorCACycfc",
+            "moduleName": "PKIXBridge",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getVersion",
+            "printedName": "getVersion(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getVersion:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC10getVersionySiSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSerialNumber",
+            "printedName": "getSerialNumber(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getSerialNumber:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC15getSerialNumberySo6NSDataCSgAFF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getValidityNotBeforeEpochSeconds",
+            "printedName": "getValidityNotBeforeEpochSeconds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getValidityNotBeforeEpochSeconds:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC32getValidityNotBeforeEpochSecondsySo8NSNumberCSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getValidityNotAfterEpochSeconds",
+            "printedName": "getValidityNotAfterEpochSeconds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getValidityNotAfterEpochSeconds:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC31getValidityNotAfterEpochSecondsySo8NSNumberCSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSubject",
+            "printedName": "getSubject(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getSubject:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC10getSubjectySDyS2SGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIssuer",
+            "printedName": "getIssuer(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getIssuer:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC9getIssuerySDyS2SGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isSelfSigned",
+            "printedName": "isSelfSigned(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)isSelfSigned:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC12isSelfSignedySbSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasExtension",
+            "printedName": "hasExtension(_:oid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)hasExtension:oid:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC12hasExtension_3oidSbSo6NSDataC_SStF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getExtensionCriticality",
+            "printedName": "getExtensionCriticality(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Foundation.NSNumber]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getExtensionCriticality:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC23getExtensionCriticalityySDySSSo8NSNumberCGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getKeyUsage",
+            "printedName": "getKeyUsage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Foundation.NSNumber]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getKeyUsage:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC11getKeyUsageySDySSSo8NSNumberCGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBasicConstraints",
+            "printedName": "getBasicConstraints(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getBasicConstraints:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC19getBasicConstraintsySDySSypGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSubjectAltNames",
+            "printedName": "getSubjectAltNames(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[[Swift.String : Any]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Any]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getSubjectAltNames:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC18getSubjectAltNamesySaySDySSypGGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSubjectKeyIdentifier",
+            "printedName": "getSubjectKeyIdentifier(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getSubjectKeyIdentifier:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC23getSubjectKeyIdentifierySo6NSDataCSgAFF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuthorityKeyIdentifier",
+            "printedName": "getAuthorityKeyIdentifier(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getAuthorityKeyIdentifier:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC25getAuthorityKeyIdentifierySDySSypGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCertificatePolicies",
+            "printedName": "getCertificatePolicies(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getCertificatePolicies:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC22getCertificatePoliciesySaySSGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCrlDistributionPoints",
+            "printedName": "getCrlDistributionPoints(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getCrlDistributionPoints:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC24getCrlDistributionPointsySaySSGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuthorityInfoAccess",
+            "printedName": "getAuthorityInfoAccess(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getAuthorityInfoAccess:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC22getAuthorityInfoAccessySDyS2SGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getQcStatements",
+            "printedName": "getQcStatements(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[[Swift.String : Swift.String]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Swift.String]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getQcStatements:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC15getQcStatementsySaySDyS2SGGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPublicKeyInfo",
+            "printedName": "getPublicKeyInfo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector(im)getPublicKeyInfo:",
+            "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC16getPublicKeyInfoySDySSypGSgSo6NSDataCF",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PKIXBridge@objc(cs)PKIXCertificateInspector",
+        "mangledName": "$s10PKIXBridge24PKIXCertificateInspectorC",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKIXValidator",
+        "printedName": "PKIXValidator",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXValidator",
+                "printedName": "PKIXBridge.PKIXValidator",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXValidator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXConfiguration",
+                "printedName": "PKIXBridge.PKIXConfiguration",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXValidator(im)initWithConfiguration:",
+            "mangledName": "$s10PKIXBridge13PKIXValidatorC13configurationAcA17PKIXConfigurationC_tcfc",
+            "moduleName": "PKIXBridge",
+            "objc_name": "initWithConfiguration:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXValidator",
+                "printedName": "PKIXBridge.PKIXValidator",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXValidator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXValidator(im)init",
+            "mangledName": "$s10PKIXBridge13PKIXValidatorCACycfc",
+            "moduleName": "PKIXBridge",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Convenience",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "validateCertificateChain",
+            "printedName": "validateCertificateChain(leafCertificate:intermediateCertificates:trustAnchors:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSData",
+                "printedName": "Foundation.NSData",
+                "usr": "c:objc(cs)NSData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSData?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.NSData?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSData",
+                            "printedName": "Foundation.NSData",
+                            "usr": "c:objc(cs)NSData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXValidator(im)validateCertificateChainWithLeafCertificate:intermediateCertificates:trustAnchors:completion:",
+            "mangledName": "$s10PKIXBridge13PKIXValidatorC24validateCertificateChain04leafD024intermediateCertificates12trustAnchors10completionySo6NSDataC_SayAJGAKyAJSg_s5Error_pSgtctF",
+            "moduleName": "PKIXBridge",
+            "objc_name": "validateCertificateChainWithLeafCertificate:intermediateCertificates:trustAnchors:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PKIXBridge@objc(cs)PKIXValidator",
+        "mangledName": "$s10PKIXBridge13PKIXValidatorC",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PKIXBridge"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKIXRevocationMethod",
+        "printedName": "PKIXRevocationMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ocsp",
+            "printedName": "ocsp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PKIXBridge.PKIXRevocationMethod.Type) -> PKIXBridge.PKIXRevocationMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIXRevocationMethod",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod",
+                    "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKIXRevocationMethod",
+                        "printedName": "PKIXBridge.PKIXRevocationMethod",
+                        "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod@PKIXRevocationMethodOCSP",
+            "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO4ocspyA2CmF",
+            "moduleName": "PKIXBridge",
+            "objc_name": "PKIXRevocationMethodOCSP",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "crl",
+            "printedName": "crl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PKIXBridge.PKIXRevocationMethod.Type) -> PKIXBridge.PKIXRevocationMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIXRevocationMethod",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod",
+                    "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKIXRevocationMethod",
+                        "printedName": "PKIXBridge.PKIXRevocationMethod",
+                        "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod@PKIXRevocationMethodCRL",
+            "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO3crlyA2CmF",
+            "moduleName": "PKIXBridge",
+            "objc_name": "PKIXRevocationMethodCRL",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "anyPreferOCSP",
+            "printedName": "anyPreferOCSP",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PKIXBridge.PKIXRevocationMethod.Type) -> PKIXBridge.PKIXRevocationMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIXRevocationMethod",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod",
+                    "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKIXRevocationMethod",
+                        "printedName": "PKIXBridge.PKIXRevocationMethod",
+                        "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod@PKIXRevocationMethodAnyPreferOCSP",
+            "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO13anyPreferOCSPyA2CmF",
+            "moduleName": "PKIXBridge",
+            "objc_name": "PKIXRevocationMethodAnyPreferOCSP",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "anyPreferCRL",
+            "printedName": "anyPreferCRL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PKIXBridge.PKIXRevocationMethod.Type) -> PKIXBridge.PKIXRevocationMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIXRevocationMethod",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod",
+                    "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKIXRevocationMethod",
+                        "printedName": "PKIXBridge.PKIXRevocationMethod",
+                        "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod@PKIXRevocationMethodAnyPreferCRL",
+            "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO12anyPreferCRLyA2CmF",
+            "moduleName": "PKIXBridge",
+            "objc_name": "PKIXRevocationMethodAnyPreferCRL",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PKIXBridge.PKIXRevocationMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIXRevocationMethod",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod",
+                    "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PKIXBridge20PKIXRevocationMethodO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO8rawValueACSgSi_tcfc",
+            "moduleName": "PKIXBridge",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PKIXBridge20PKIXRevocationMethodO8rawValueSivp",
+            "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO8rawValueSivp",
+            "moduleName": "PKIXBridge",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PKIXBridge20PKIXRevocationMethodO8rawValueSivg",
+                "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO8rawValueSivg",
+                "moduleName": "PKIXBridge",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod",
+        "mangledName": "$s10PKIXBridge20PKIXRevocationMethodO",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKIXConfiguration",
+        "printedName": "PKIXConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isRevocationEnabled",
+            "printedName": "isRevocationEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration(py)isRevocationEnabled",
+            "mangledName": "$s10PKIXBridge17PKIXConfigurationC19isRevocationEnabledSbvp",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration(im)isRevocationEnabled",
+                "mangledName": "$s10PKIXBridge17PKIXConfigurationC19isRevocationEnabledSbvg",
+                "moduleName": "PKIXBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "revocationMethod",
+            "printedName": "revocationMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXRevocationMethod",
+                "printedName": "PKIXBridge.PKIXRevocationMethod",
+                "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration(py)revocationMethod",
+            "mangledName": "$s10PKIXBridge17PKIXConfigurationC16revocationMethodAA014PKIXRevocationD0Ovp",
+            "moduleName": "PKIXBridge",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIXRevocationMethod",
+                    "printedName": "PKIXBridge.PKIXRevocationMethod",
+                    "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration(im)revocationMethod",
+                "mangledName": "$s10PKIXBridge17PKIXConfigurationC16revocationMethodAA014PKIXRevocationD0Ovg",
+                "moduleName": "PKIXBridge",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isRevocationEnabled:revocationMethod:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXConfiguration",
+                "printedName": "PKIXBridge.PKIXConfiguration",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXRevocationMethod",
+                "printedName": "PKIXBridge.PKIXRevocationMethod",
+                "usr": "c:@M@PKIXBridge@E@PKIXRevocationMethod"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration(im)initWithIsRevocationEnabled:revocationMethod:",
+            "mangledName": "$s10PKIXBridge17PKIXConfigurationC19isRevocationEnabled16revocationMethodACSb_AA014PKIXRevocationG0Otcfc",
+            "moduleName": "PKIXBridge",
+            "objc_name": "initWithIsRevocationEnabled:revocationMethod:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isRevocationEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXConfiguration",
+                "printedName": "PKIXBridge.PKIXConfiguration",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration(im)initWithIsRevocationEnabled:",
+            "mangledName": "$s10PKIXBridge17PKIXConfigurationC19isRevocationEnabledACSb_tcfc",
+            "moduleName": "PKIXBridge",
+            "objc_name": "initWithIsRevocationEnabled:",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKIXConfiguration",
+                "printedName": "PKIXBridge.PKIXConfiguration",
+                "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration(im)init",
+            "mangledName": "$s10PKIXBridge17PKIXConfigurationCACycfc",
+            "moduleName": "PKIXBridge",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Convenience",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PKIXBridge@objc(cs)PKIXConfiguration",
+        "mangledName": "$s10PKIXBridge17PKIXConfigurationC",
+        "moduleName": "PKIXBridge",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 681,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1Decoding.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9467,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1Decoding.swift",
+      "kind": "StringLiteral",
+      "offset": 9508,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 681,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 706,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 735,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1163,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1201,
+      "length": 4,
+      "value": "0x02"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1241,
+      "length": 4,
+      "value": "0x03"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1283,
+      "length": 4,
+      "value": "0x04"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1318,
+      "length": 4,
+      "value": "0x05"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1365,
+      "length": 4,
+      "value": "0x06"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1406,
+      "length": 4,
+      "value": "0x0C"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1452,
+      "length": 4,
+      "value": "0x13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1496,
+      "length": 4,
+      "value": "0x14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1536,
+      "length": 4,
+      "value": "0x16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1574,
+      "length": 4,
+      "value": "0x17"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1620,
+      "length": 4,
+      "value": "0x18"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1660,
+      "length": 4,
+      "value": "0x1E"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1699,
+      "length": 4,
+      "value": "0x10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/ASN1\/ASN1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1733,
+      "length": 4,
+      "value": "0x11"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/PKIXBridgeError.swift",
+      "kind": "StringLiteral",
+      "offset": 910,
+      "length": 48,
+      "value": "\"eu.europa.ec.eudi.etsi1196x2.consultation.pkix\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 724,
+      "length": 11,
+      "value": "\"2.5.29.15\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 776,
+      "length": 11,
+      "value": "\"2.5.29.17\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 830,
+      "length": 11,
+      "value": "\"2.5.29.19\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 11,
+      "value": "\"2.5.29.31\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 946,
+      "length": 11,
+      "value": "\"2.5.29.32\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 1006,
+      "length": 11,
+      "value": "\"2.5.29.35\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 1064,
+      "length": 11,
+      "value": "\"2.5.29.14\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 1160,
+      "length": 19,
+      "value": "\"1.3.6.1.5.5.7.1.1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 1218,
+      "length": 19,
+      "value": "\"1.3.6.1.5.5.7.1.3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 1303,
+      "length": 20,
+      "value": "\"1.3.6.1.5.5.7.48.2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 1357,
+      "length": 20,
+      "value": "\"1.3.6.1.5.5.7.48.1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/X509\/X509Types.swift",
+      "kind": "StringLiteral",
+      "offset": 1443,
+      "length": 16,
+      "value": "\"0.4.0.1862.1.6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/PKIXConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1107,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/PKIXConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1305,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/PKIXConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1552,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/PKIXBridge\/PKIXBridge\/Sources\/PKIXBridge\/PKIXConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1788,
+      "length": 1,
+      "value": "3"
+    }
+  ]
+}
