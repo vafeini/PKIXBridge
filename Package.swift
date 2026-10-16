@@ -30,7 +30,15 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PKIXBridge",
-            path: "./distribution/PKIXBridge.xcframework"
-        )
+            path: "./distribution/archive/PKIXBridge.xcframework.zip"
+        ),
+        .testTarget(
+           name: "PKIXBridgeTests",
+           dependencies: ["PKIXBridge"],
+           path: "Tests/PKIXBridgeTests",
+           resources: [
+               .process("Fixtures"),
+           ]
+       ),
       ]
 )
