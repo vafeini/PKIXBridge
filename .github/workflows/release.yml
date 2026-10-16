@@ -1,0 +1,99 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'Release version'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  publish-xcframework:
+    name: Publish xcframework
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Build PKIXBridge.xcframework
+        id: build
+        run: |    
+          pwd
+          cd scripts 
+          ./build-xcframework.sh .
+          cd ../ &&  ls -l           
+
+      - name: Package PKIXBridge.xcframework
+        id: checksum
+        run: |
+          pwd
+          
+          set -euo pipefail
+
+          XCFRAMEWORK_DIR="build/PKIXBridge.xcframework"
+          ZIP_NAME="PKIXBridge.xcframework.zip"
+          ZIP_PATH="$GITHUB_WORKSPACE/$ZIP_NAME"
+
+          if [[ ! -d "$XCFRAMEWORK_DIR" ]]; then
+            echo "ERROR: $XCFRAMEWORK_DIR not found. Was it built as part of kmmBridgePublish?" >&2
+            exit 1
+          fi
+
+          ditto -c -k --keepParent "$XCFRAMEWORK_DIR" "$ZIP_PATH"
+
+          CHECKSUM=$(swift package compute-checksum "$ZIP_PATH")
+          echo "checksum=$CHECKSUM" >> "$GITHUB_OUTPUT"
+          echo "PKIXBridge.xcframework.zip SHA-256: $CHECKSUM"
+
+      - name: Copy XCFramework to package folder
+        run: |          
+          # Clean up
+          rm -rf package/*
+                    
+          # Create directory structure for Swift Package
+          mkdir -p package/
+          
+          # Copy the XCFramework
+          cp -r build/PKIXBridge.xcframework package/
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add ./package
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "[CI Automation] Update PKIXBridge XCFramework - $(date '+%Y-%m-%d %H:%M:%S') [skip ci]"
+            git push origin ${{ github.ref_name }}
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.ADMIN_PAT }}
+
+#      - name: Upload PKIXBridge.xcframework.zip to release
+#        uses: softprops/action-gh-release@v3
+#        with:
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          tag_name: ${{ github.ref_name }}
+#          files: PKIXBridge.xcframework.zip
+#
+#      - name: Update release tag
+#        uses: touchlab/ga-update-release-tag@v1
+#        id: update-release-tag
+#        with:
+#          commitMessage: "KMP SPM package release for ${{ github.ref_name }}"
+#          tagMessage: "KMP release version ${{ github.ref_name }}"
+#          tagVersion: ${{github.ref_name}}

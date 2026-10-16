@@ -29,7 +29,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PKIXBridge",
-            path: "./distribution/PKIXBridge.xcframework"
+            path: "./package/PKIXBridge.xcframework"
         ),
         .testTarget(
            name: "PKIXBridgeTests",

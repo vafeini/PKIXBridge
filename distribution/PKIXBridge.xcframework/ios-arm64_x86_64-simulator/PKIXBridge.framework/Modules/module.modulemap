@@ -1,5 +1,0 @@
-framework module PKIXBridge {
-    umbrella header "PKIXBridge-Swift.h"
-    export *
-    module * { export * }
-}

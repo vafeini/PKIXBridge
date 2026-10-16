@@ -11,8 +11,8 @@ classes so they bridge to Objective-C/Kotlin, not plain Swift structs/enums.
 ## Critical: the package does NOT build from `Sources/`
 
 `Package.swift` declares `PKIXBridge` as a **`.binaryTarget`** pointing at the
-prebuilt, committed archive `distribution/archive/PKIXBridge.xcframework.zip`
-(expanded copy also checked in under `distribution/PKIXBridge.xcframework/`).
+prebuilt, committed archive `scripts`
+(expanded copy also checked in under `scripts`).
 Only the `PKIXBridgeTests` test target actually compiles `Sources/`... wait,
 no — check again: the test target depends on `PKIXBridge` (the binary target),
 so **`Sources/*.swift` is not compiled or exercised by `swift test` at all**.
@@ -23,8 +23,8 @@ from.
   effect** on `swift build` / `swift test` / the exported xcframework until
   someone rebuilds the `.xcframework` (e.g. via `xcodebuild -create-xcframework`
   or `swift build` targeting the actual source + packaging into the archive)
-  and replaces both `distribution/PKIXBridge.xcframework/` and
-  `distribution/archive/PKIXBridge.xcframework.zip`. There is no script in
+  and replaces both `scripts` and
+  `scripts`. There is no script in
   this repo that does this — it must be done manually/externally.
 - Before investing effort editing `Sources/`, confirm with the user whether
   they want source changes (which require a manual rebuild+repackage step
