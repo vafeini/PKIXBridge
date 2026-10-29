@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 5.9
 //
 // Copyright (c) 2026 European Commission
 //
@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
     name: "PKIXBridge",
-    platforms: [ .iOS(.v16) ],
+    platforms: [ .iOS(.v13) ],
     products: [
         .library(
             name: "PKIXBridge",
