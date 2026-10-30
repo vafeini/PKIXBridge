@@ -138,20 +138,8 @@ import Security
     }
 
     private static func matchedAnchor(in trust: SecTrust) -> SecCertificate? {
-        if #available(iOS 15.0, macOS 12.0, *) {
-            guard let chain = SecTrustCopyCertificateChain(trust) as? [SecCertificate] else { return nil }
-            return chain.last
-        } else {
-            return matchedAnchorLegacy(in: trust)
-        }
-    }
-
-    @available(iOS, introduced: 13.0, deprecated: 15.0)
-    @available(macOS, introduced: 11.0, deprecated: 12.0)
-    private static func matchedAnchorLegacy(in trust: SecTrust) -> SecCertificate? {
-        let count = SecTrustGetCertificateCount(trust)
-        guard count > 0 else { return nil }
-        return SecTrustGetCertificateAtIndex(trust, count - 1)
+        guard let chain = SecTrustCopyCertificateChain(trust) as? [SecCertificate] else { return nil }
+        return chain.last
     }
 
     private func osStatusError(_ status: OSStatus) -> Error {

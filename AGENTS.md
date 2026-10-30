@@ -38,7 +38,7 @@ already be populated or they fail with a missing binary target.
 ## Deployment target: `MIN_IOS` in `scripts/build-xcframework.sh`
 
 The **actual** compiled minimum iOS version comes from `MIN_IOS` in
-`scripts/build-xcframework.sh` (currently `15.0`), which is passed as
+`scripts/build-xcframework.sh` (currently `16.0`), which is passed as
 `-target arm64-apple-ios${MIN_IOS}` to every `swiftc` invocation. Keep this
 in sync with `platforms: [.iOS(...)]` in `Package.swift` — the latter is
 only a SwiftPM-level declaration for consumers' type-checking and does not
