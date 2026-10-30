@@ -35,7 +35,7 @@ BUILD_DIR="$PROJECT_DIR/build"
 
 MODULE_NAME="PKIXBridge"
 BUNDLE_ID="eu.europa.ec.eudi.PKIXBridge"
-MIN_IOS="13.0"
+MIN_IOS="16.0"
 
 if [[ "$(uname)" != "Darwin" ]]; then
     echo "ERROR: xcframework production requires macOS (need Xcode)" >&2
